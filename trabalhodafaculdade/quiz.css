@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+
+}
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:green;
+    height: 80px;
+    position: relative; /* necessário pro botão ficar dentro do header */
+  }
+  
+  header h1 {
+    font-size: 60px;
+    color: white;
+    font-family: "Pacifico";
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* ícone de "Home" no canto superior direito */
+  .home-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  /* estilo da imagem do ícone */
+  .home-icon img {
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  /* efeito de zoom no ícone ao passar o mouse */
+  .home-icon img:hover {
+    transform: scale(1.1);
+  }
+  /* contêiner principal do quiz */
+  .quiz-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+/* espaçamento entre perguntas */
+  .question {
+    margin-bottom: 20px;
+  }
+  /* estilo geral dos botões */
+  button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /* cor diferente quando o botão é focado com mouse */
+  button:hover {
+    background-color: #3ddc84;
+  }
+  /* resultado do quiz */
+  #resultado {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  /* contêiner do formulário de cadastro */
+  .cadastro {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  /* título do formulário de cadastro */
+  .cadastro h2 {
+    color: green;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  /* formulário organizado em coluna */
+  .cadastro form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cadastro label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  /* campos de entrada de dados */
+  .cadastro input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  /* botão de enviar cadastro */
+  .cadastro button {
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  /* hover do botão de cadastro*/
+  .cadastro button:hover {
+    background-color: rgb(10, 97, 10);
+  }
+  

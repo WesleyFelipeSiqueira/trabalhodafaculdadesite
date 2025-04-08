@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+    height: 80px;
+    position: relative; /* necessário para posicionar o ícone dentro do header */
+}
+
+header h1 {
+    font-size: 60px;
+    color: white;
+    font-family: "Pacifico";
+    font-weight: normal;
+    font-style: normal;
+}
+/* ícone de home no canto superior direito */
+.home-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.home-icon img {
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.home-icon img:hover {
+    transform: scale(1.1);
+}
+/* seção principal com imagem e texto */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.box.img{
+    display: flex;
+    justify-content: center;
+    width: 35%;
+}
+.box.text{
+    display: flex;
+    flex-flow: row wrap;
+    width: 35%;
+}
+.box.text h2{
+    font-family: "DM Sans", sans-serif;
+    font-size: 80px;
+    color: green;
+    font-weight: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 70px;
+}
+.box.text p{
+    color: gray;
+    margin-bottom: 30px;
+}
+/* botões principais */
+.botao-hero{
+    background: gray;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s all;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.botao-hero:hover{
+    background: green;
+}
+/* cartões dos médicos */
+.box-item{
+    width: 30%;
+    height: 360px;
+    background: green;
+    margin: 5px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s all;
+}
+.box-item:hover{
+    background-color: rgb(59, 216, 59);
+    font-size: 15px;
+
+}
+.especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background: green;
+    height: 150px;
+    color: white;
+    font-size: 22px;
+}
+/* Ícone do WhatsApp fixo */
+.whats{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+/* responsividade: telas menores que 1200px */
+@media screen and (max-widch: 1200px){
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .box.text{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 40px 30px;
+    }
+    .box.text h2{
+        font-size: 60px;
+    }
+    .box.text p{
+        text-align: center;
+    }
+    .box.img{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .box-item{
+        width: 90%;
+    }
+    footer{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+

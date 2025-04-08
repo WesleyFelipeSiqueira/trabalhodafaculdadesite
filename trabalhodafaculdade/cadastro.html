@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - Medicom</title>
+  <link rel="stylesheet" href="quiz.css"/>
+  <link rel="icon" href="img/logo.png">
+</head>
+<body>
+  <header>
+    <h1>Medicom</h1>
+    <a href="index.html" class="home-icon">
+      <img src="img/home.png" alt="Início">
+    </a>
+  </header>
+ <body>
+<section class="cadastro">
+    <h2>Faça o seu cadastro!</h2>
+    <form id="formCadastro">  <!-- formulário com campos de dados pessoais e endereço -->
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required>
+  
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+  
+      <label for="cep">CEP:</label>  <!-- campo CEP (utilizado para buscar endereço automático com ViaCEP) -->
+      <input type="text" id="cep" name="cep" required>
+  <!-- campos de endereço preenchidos automaticamente via JavaScript -->
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" name="endereco" required>
+  
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro" required>
+  
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
+  
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado" required>
+  
+      <button type="submit">Cadastrar</button>
+    </form>
+  </section>
+</body> 
+
+  <script src="java.js"></script>
+</body>
+</html>

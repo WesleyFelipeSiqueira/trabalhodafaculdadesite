@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Autoavaliação - Medicom</title>
+  <link rel="stylesheet" href="quiz.css"/>
+  <link rel="icon" href="img/logo.png">
+</head>
+<body>
+  <header> <!-- cabeçalho com o nome da clínica e ícone para voltar à home -->
+    <h1>Medicom</h1>
+    <a href="index.html" class="home-icon">
+      <img src="img/home.png" alt="Início">
+    </a>
+  </header>
+
+  <main>
+    <div class="quiz-container">
+      <h2>Autoavaliação de Saúde</h2>
+      <div class="question">
+        <p>1. Você costuma dormir ao menos 7 horas por noite?</p>
+        <label><input type="radio" name="sono" value="sim" /> Sim</label><br />
+        <label><input type="radio" name="sono" value="nao" /> Não</label>
+      </div>
+      <div class="question">
+        <p>2. Você pratica atividades físicas regularmente?</p>
+        <label><input type="radio" name="atividade" value="sim" /> Sim</label><br />
+        <label><input type="radio" name="atividade" value="nao" /> Não</label>
+      </div>
+      <div class="question">
+        <p>3. Você realiza check-ups médicos pelo menos uma vez ao ano?</p>
+        <label><input type="radio" name="checkup" value="sim" /> Sim</label><br />
+        <label><input type="radio" name="checkup" value="nao" /> Não</label>
+      </div>
+      <div class="question">
+        <p>4. Como você avalia sua alimentação?</p>
+        <label><input type="radio" name="alimentacao" value="boa" /> Boa</label><br />
+        <label><input type="radio" name="alimentacao" value="razoavel" /> Razoável</label><br />
+        <label><input type="radio" name="alimentacao" value="ruim" /> Ruim</label>
+      </div>
+      <button id="enviar">Ver Resultado</button> <!-- botão para enviar respostas -->
+      <p id="resultado"></p> <!-- parágrafo onde será exibido o resultado via JavaScript -->
+    </div>
+  </main>
+
+  <footer>
+    <p>2025 © Clínica de Saúde Medicom</p>
+  </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>
